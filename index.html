@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justkepki</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbarColor01">
+            <a class="navbar-brand" href="index.html" style="font-size: 30px;">JustKepki<img src="img/logo.png" alt="logo" width="45" height="45"></a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html" style="font-family:'KB Vibrocentric'; font-size: 13px;letter-spacing: 2.5px;">Головна <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#imagecatalog" style="font-family:'KB Vibrocentric'; font-size: 13px;letter-spacing: 2.5px;">Каталог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer" style="font-family:'KB Vibrocentric'; font-size: 13px;letter-spacing: 2.5px;">Контакти</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div id="backgroundimage">
+            <div class="backgroundimage">
+                <div class="background"></div>    
+                <div class="heading">
+                    <h3>Магазин</h3>
+                   <h1>JUSTKEPKI STORE</h1>
+                   <p>Якісний одяг та аксесуари</p>
+                   <a href="#imagecatalog" type="button" class="btn btn-outline-light" style="font-family:'NFSCarbon'; font-size: 12px; margin-top: 30px;">Каталог</a>
+              </div>
+            </div>
+        </div>
+        <div id="mainblock" class="container">
+            <h2>Популярне</h2>        
+            <a class="back_to_top" title="Наверх"><img src="img/toptop.png" alt="toptop"></a>
+            <div class="row">
+                  <article class="card col-md-3 col-sm-6 col-xs-9 border-0" style="width: 16rem;">
+                    <div class="discount">-10%</div>
+                    <img class="imgtop" data-target="#tovarInfoStore" src="img/sneaker.jpg" alt="sneaker">
+                    <img src="img/sneakers.jpg" alt="Card image cap" data-target="#tovarInfoStore">
+                    <div class="card-body text-white bg-dark mb-3">
+                      <p class="card-text"><b>Жіночі кросівки YEEZY(голубі)</b></p>
+                      <p>Якість пушка <br> Розмір:36-40</p>
+                      <p class="price">1500 грн</p> 
+                      <p>1350 грн</p>
+                    </div>
+                  </article>
+                  <article class="card col-md-3 col-sm-6 col-xs-9 border-0" style="width: 16rem;" data-target="#productsInfoModal">
+                    <div class="discount">-20%</div>
+                    <img class="imgtop" src="img/pantss.jpg" alt="image-top" data-target="#productsInfoModal">
+                    <img src="img/pants.jpg"  alt="Card image cap" data-target="#productsInfoModal">
+                    <div class="card-body text-white bg-dark mb-3">
+                      <p class="card-text"><b>Стильні спортивні чоловічі штани</b></p>
+                      <p>Розмір: S M L XL</p>
+                      <p class="price">800 грн</p>
+                      <p>640 грн</p>
+                    </div>
+                  </article>
+                  <article class="card col-md-3 col-sm-6 col-xs-9 border-0" style="width: 16rem;">
+                    <div class="discounttop">TOP</div>
+                    <img class="imgtop" src="img/t-shirts2.jpg" alt="image-top">
+                    <img src="img/t-shirts.jpg" alt="Card image cap">
+                    <div class="card-body text-white bg-dark mb-3">
+                      <p class="card-text"><b>Легка чоловіча футболка</b></p>
+                      <p>Розмір: S M L XL</p>
+                      <p>250 грн</p>
+                    </div>
+                  </article>
+                  <article class="card col-md-3 col-sm-6 col-xs-9 border-0" style="width: 16rem;">
+                    <img class="imgtop" src="img/backpackk.jpg" alt="image-top">
+                    <img src="img/backpack.jpg" alt="Card image cap">
+                    <div class="card-body text-white bg-dark mb-3">
+                      <p class="card-text"><b>Рюкзак SOUTH(сірий)</b></p>
+                      <p>Розмір: Довжина - 42см,<br> Ширина - 30см</p>
+                      <p>459 грн</p>
+                    </div>
+                  </article>
+            </div>
+        
+                 <!--Modal(_Не працює...)-->
+        <div class="modal" id="tovarInfoStore" tabindex="-1" aria-labelledby="tovarInfoStore" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="tovarInfoStore">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+       <!--Line-->
+
+
+            <div class="line"></div>
+            <span class="catalogword" >КАТАЛОГ</span>
+        </div>
+             
+           <div id="imagecatalog" class="row">
+                <div  class="imagecatalogwatch">
+                    <a href="catalog-clock.html">
+                     <div class="catalogimageback"><img src="img/clockkkk.jpg" alt="clock"></div>
+                     <h5 style="margin-left: 55px;">Годинники</h5>
+                     <p>Більше 20 моделей,<br>чоловічі і жіночі</p>
+                     </a>
+                </div>
+                <div class="imagecatalogwatch">
+                    <a href="#">
+                    <div class="catalogimageback"><img src="img/panama.jpg" alt="clock"></div>
+                    <h5 style="margin-left: 75px;">Аксесуари</h5>
+                    <p>Кепки,шапки,панамки<br>сумки,бананки</p>
+                </div>
+                <div class="imagecatalogwatch">
+                    <a href="#">
+                    <div class="catalogimageback"><img src="img/image.jpg" alt="clock"></div>
+                    <h5 style="margin-left: 115px;">Одяг</h5>
+                    <p>Куртки,вітровки та<br>штани</p>
+                    </a>
+                </div>
+                <div class="imagecatalogwatch">
+                    <a href="#">
+                    <div class="catalogimageback"><img src="img/krossi.jpg" alt="clock"></div>
+                    <h5 style="margin-left: 100px;">Взуття</h5>
+                    <p>Тільки оригінал,<br>чоловічі і жіночі</p>
+                    </a>
+                </div>
+           </div>
+           <div class="container line"></div>
+        <div class="reason">
+            <h3>Чому ми?</h3>
+            <section>
+                <img src="img/iconn.png" alt="iconplus">
+               <p class="p">ПРАЦЮЄМО З ПЕРЕВІРЕНИМИ ПОСТАЧАЛЬНИКАМИ</p>
+               <p>У НАС ТІЛЬКИ ЯКІСНИЙ ОДЯГ,ЯКИЙ ПЕРЕВІРЯЮТЬ ПЕРЕД ВІДПРАВКОЮ</p>
+            </section>
+            <section>
+                <img src="img/iconn.png" alt="iconplus">
+                <p class="p">НИЗЬКІ ЦІНИ</p>
+                <p>НАЙДОСТУПНІШІ І НАЙНИЖЧІ ЦІНИ НА РИНКУ ОДЯГУ І АКСЕСУАРІВ</p>
+            </section>
+            <section>
+                <img src="img/iconn.png" alt="iconplus">
+                <p class="p">ВІДПРАВКА НОВОЮ ПОШТОЮ (НАЛОЖКА)</p>
+                <p>МИ ВІДПРАВЛЯЄМО ПЕРЕВАЖНО НАЛОЖКОЙ, ОПЛАТА КАРТОЮ ЗА БАЖАННЯМ. <br>
+                  ПЕРЕД ОПЛАТОЮ НА ПОШТОЮ ВИ ЗМОЖЕТЕ ПЕРЕКОНАТИСЯ ЯК ТОВАРУ</p>
+            </section>
+        </div>
+
+        <!--Form Submit-->
+
+         <div class="formtelephone">
+          
+           <form>
+            <input type="hidden" name="project_name" value="Site Name">
+            <input type="hidden" name="admin_email" value="rqo53064@bcaoo.com">
+            <input type="hidden" name="form_subject" value="Form Subject">
+             <div class="formalertblock" ><p>Дякую ми зараз звяжемось з вами</p> </div>
+            <input type="text" name="Phone" placeholder="Писати сюди"><br>
+            <button>Відправити</button>
+           </form> 
+           <p>Є питання?Залиишай свій номер і ми передзвонимо <br> на протязі 10 хв ;)</p>
+         </div>
+    </main>
+    <!--Footer Block-->
+     <footer id="footer">
+         <div class="footer">
+          <p>Менеджер-консультант</p>
+          <h2>+380985725798</h2>
+          <p class="pmail">agent.pelykh@yahoo.com</p>
+          <span>м.Новояворіськ, Львівська область.</span>
+          <p><a href="https://www.instagram.com/just.kepki/"><img src="img/instagram.png" alt="instagram"></a></p>
+        </div>
+     </footer>
+   
+  
+        
+  <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+</body>
+</html>
